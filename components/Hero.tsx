@@ -92,7 +92,7 @@ export default function Hero() {
                         </h2>
 
                         <p className="text-base leading-relaxed mb-8 max-w-xl" style={{ color: 'var(--text-muted)' }}>
-                            Final-year CSE student at <strong style={{ color: 'var(--text)' }}>Panimalar Engineering College</strong> (CGPA 8.5),
+                            Pre-Final-year CSE student at <strong style={{ color: 'var(--text)' }}>Panimalar Engineering College</strong> (CGPA 8.5),
                             passionate about web development, data analytics, and ML — building real-world applications one project at a time.
                         </p>
 
