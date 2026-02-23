@@ -87,9 +87,9 @@ export default function About() {
                             Hello! I&apos;m Kumaran K <span>👋</span>
                         </h3>
                         <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text-muted)' }}>
-                            I&apos;m a final-year Computer Science and Engineering student at{' '}
+                            I&apos;m a pre-final-year Computer Science and Engineering student at{' '}
                             <strong style={{ color: 'var(--text)' }}>Panimalar Engineering College</strong>, with a strong foundation in DSA, Data Analytics,
-                            Machine Learning, Java, Python, and Web Development.
+                            Machine Learning, Java, Python, GenAI and Web Development.
                         </p>
                         <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-muted)' }}>
                             I&apos;ve completed 3 internships in data analysis and web development, built real-world projects,
