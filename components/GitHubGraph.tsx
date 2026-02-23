@@ -1,7 +1,6 @@
 'use client';
 import { useRef, useEffect, useState } from 'react';
-// @ts-expect-error no types available
-import GitHubCalendar from 'react-github-calendar';
+import { GitHubCalendar } from 'react-github-calendar';
 
 export default function GitHubGraph() {
     const ref = useRef<HTMLDivElement>(null);

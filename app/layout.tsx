@@ -31,14 +31,9 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-import { Inter, Fira_Code } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const firaCode = Fira_Code({ subsets: ['latin'], variable: '--font-fira', display: 'swap' });
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark" className={`${inter.variable} ${firaCode.variable}`}>
+    <html lang="en" data-theme="dark">
       <head>
       </head>
       <body className="antialiased" style={{ fontFamily: 'var(--font-inter)' }}>
