@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { Code2, Target, Zap, Trophy, ExternalLink } from 'lucide-react';
+import { Trophy, ExternalLink } from 'lucide-react';
 
 interface LCStats {
     totalSolved: number;
@@ -24,7 +24,6 @@ export default function LeetCode() {
     const ref = useRef<HTMLDivElement>(null);
     const [visible, setVisible] = useState(false);
     const [stats, setStats] = useState<LCStats>(FALLBACK);
-    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         fetch('https://leetcode-stats-api.herokuapp.com/Kumaran18v')
@@ -32,8 +31,7 @@ export default function LeetCode() {
             .then((d: LCStats) => {
                 if (d.totalSolved) setStats(d);
             })
-            .catch(() => { })
-            .finally(() => setLoaded(true));
+            .catch(() => { });
     }, []);
 
     useEffect(() => {

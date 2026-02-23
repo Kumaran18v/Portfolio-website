@@ -29,6 +29,7 @@ function useTypingEffect(phrases: string[], speed = 80, pause = 1800) {
         } else if (deleting && charIdx > 0) {
             timeout = setTimeout(() => setCharIdx(i => i - 1), speed / 2);
         } else if (deleting && charIdx === 0) {
+            // eslint-disable-next-line
             setDeleting(false);
             setPhraseIdx(i => (i + 1) % phrases.length);
         }

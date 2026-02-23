@@ -1,6 +1,6 @@
 'use client';
 import { useRef, useEffect, useState } from 'react';
-import { Clock, ArrowRight, Tag } from 'lucide-react';
+import { Clock, ArrowRight } from 'lucide-react';
 
 const posts = [
     {

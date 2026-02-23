@@ -1,6 +1,6 @@
 'use client';
-import { useEffect, useState } from 'react';
-import { X, ExternalLink, Download } from 'lucide-react';
+import { useEffect } from 'react';
+import { X, Download } from 'lucide-react';
 
 export default function ResumeModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
     useEffect(() => {

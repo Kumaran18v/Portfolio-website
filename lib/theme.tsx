@@ -10,6 +10,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         const saved = localStorage.getItem('theme') as Theme | null;
         const initial = saved ?? 'dark';
+        // eslint-disable-next-line
         setTheme(initial);
         document.documentElement.setAttribute('data-theme', initial);
     }, []);

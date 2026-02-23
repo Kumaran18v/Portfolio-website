@@ -1,5 +1,5 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { personal } from '@/lib/data';
 import { Mail, Phone, MapPin, Github, Linkedin, Code2, Send, CheckCircle } from 'lucide-react';

@@ -111,16 +111,16 @@ export const skills = [
         badges: ["React", "Node.js", "Express.js", "Tailwind CSS"],
     },
     {
-        category: "Data & Tools",
+        category: "Data, AI & Tools",
         icon: "bar-chart",
         color: "yellow",
         items: [
             { name: "SQL / MySQL", pct: 78 },
             { name: "Power BI", pct: 72 },
             { name: "Pandas / NumPy", pct: 75 },
-            { name: "Git & GitHub", pct: 80 },
+            { name: "GenAI & LLMs", pct: 85 },
         ],
-        badges: ["MongoDB", "Oracle", "Power BI", "Excel", "VS Code"],
+        badges: ["MongoDB", "Oracle", "Power BI", "Excel", "GenAI", "Git / GitHub"],
     },
 ];
 
@@ -238,6 +238,8 @@ export const projects = [
 ];
 
 export const certifications = [
+    { name: "Participated in Adobe Hackathon", issuer: "Adobe", year: "2024" },
+    { name: "Participated in Dreamflow Hackathon", issuer: "Dreamflow", year: "2024" },
     { name: "C Programming", issuer: "Infosys Springboard", year: "2024" },
     { name: "Database Management System", issuer: "Infosys Springboard", year: "2025" },
     { name: "Cybersecurity Analysis & Design", issuer: "NASSCOM", year: "2024" },

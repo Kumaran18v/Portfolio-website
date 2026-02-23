@@ -2,7 +2,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { projects } from '@/lib/data';
 import { Github, ExternalLink } from 'lucide-react';
-import Link from 'next/link';
 
 type FilterKey = 'All' | 'AI/ML' | 'Full-Stack' | 'Data' | 'Frontend' | 'Python';
 const filters: FilterKey[] = ['All', 'AI/ML', 'Full-Stack', 'Data', 'Frontend', 'Python'];
@@ -49,11 +48,6 @@ export default function Projects() {
     const [active, setActive] = useState<FilterKey>('All');
     const gridRef = useRef<HTMLDivElement>(null);
     const [visible, setVisible] = useState(false);
-
-    useState(() => {
-        const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold: 0.05 });
-        // observe on mount via ref callback — we'll use useEffect below
-    });
 
     // Use a ref callback instead of useEffect for SSR safety
     const setGridRef = useCallback((node: HTMLDivElement | null) => {

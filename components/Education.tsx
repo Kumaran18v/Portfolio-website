@@ -23,8 +23,8 @@ export default function Education() {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex justify-center gap-3 mb-12">
-                    {([['edu', 'Education', GraduationCap], ['cert', 'Certifications', Award]] as const).map(([key, label, Icon]) => (
+                <div className="flex justify-center gap-3 mb-12 flex-wrap">
+                    {([['edu', 'Education', GraduationCap], ['cert', 'Badges & Achievements', Award]] as const).map(([key, label, Icon]) => (
                         <button key={key} onClick={() => setTab(key)}
                             className="flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200"
                             style={tab === key

@@ -1,6 +1,6 @@
 'use client';
 import { personal } from '@/lib/data';
-import { Github, Linkedin, Mail, Code2, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const year = new Date().getFullYear();
 

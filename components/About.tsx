@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { personal, stats, softSkills } from '@/lib/data';
+import { stats, softSkills } from '@/lib/data';
 import { Download, MapPin } from 'lucide-react';
 
 function useCounter(target: number, duration = 1600, active = false) {
@@ -64,6 +64,7 @@ export default function About() {
                             />
                             {/* White ring spacer */}
                             <div className="relative rounded-2xl overflow-hidden" style={{ border: '3px solid var(--bg-2)', boxShadow: '0 24px 64px rgba(0,0,0,0.4)' }}>
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src="/kumaran-profile.jpg"
                                     alt="Kumaran K – Software Developer"
