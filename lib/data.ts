@@ -2,7 +2,7 @@ export const personal = {
     name: "Kumaran K",
     title: "Computer Science Engineering Student",
     tagline:
-        "Final-year CSE student passionate about web development, data analytics, and machine learning — seeking entry-level roles to build scalable, data-driven applications.",
+        "Pre-Final-year CSE student passionate about web development, data analytics, and machine learning — seeking entry-level roles to build scalable, data-driven applications.",
     email: "kumaran18v@gmail.com",
     phone: "9080879920",
     location: "Arakkonam, Tamil Nadu",
@@ -130,7 +130,7 @@ export const projects = [
         description:
             "An AI-powered web platform where citizens report waste via images, a YOLOv8 CNN auto-classifies waste types, and admins manage optimised pickup scheduling with real-time location mapping and analytics dashboards.",
         tags: ["TypeScript", "YOLOv8", "CNN", "Leaflet.js", "Chart.js", "AI/ML"],
-        category: "ai",
+        category: "fullstack",
         gradient: "from-violet-600 to-purple-700",
         featured: true,
         github: "https://github.com/Kumaran18v/smart-waste-reporting-system",

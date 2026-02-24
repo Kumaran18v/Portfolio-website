@@ -147,17 +147,13 @@ export default function Hero() {
                                 <span className="w-3 h-3 rounded-full bg-[#28ca41]" />
                                 <span className="ml-3 text-xs" style={{ fontFamily: 'var(--mono)', color: 'var(--text-dim)' }}>about_kumaran.ts</span>
                             </div>
-                            <pre className="p-6 text-sm leading-8 overflow-x-auto" style={{ fontFamily: 'var(--mono)' }}>
+                            <pre className="p-5 text-sm leading-7 overflow-x-auto" style={{ fontFamily: 'var(--mono)' }}>
                                 <code><span style={{ color: '#c792ea' }}>const</span> <span style={{ color: '#82aaff' }}>kumaran</span> {`= {`}
                                     <span style={{ color: '#7cb8ff' }}>name</span>: <span style={{ color: '#c3e88d' }}>&quot;Kumaran K&quot;</span>,
                                     <span style={{ color: '#7cb8ff' }}>college</span>: <span style={{ color: '#c3e88d' }}>&quot;Panimalar Engg.&quot;</span>,
                                     <span style={{ color: '#7cb8ff' }}>cgpa</span>: <span style={{ color: '#f78c6c' }}>8.5</span>,
                                     <span style={{ color: '#7cb8ff' }}>status</span>: <span style={{ color: '#c3e88d' }}>&quot;Fresher 🎓&quot;</span>,
-                                    <span style={{ color: '#7cb8ff' }}>passion</span>: [
-                                    <span style={{ color: '#c3e88d' }}>&quot;Web Dev&quot;</span>,
-                                    <span style={{ color: '#c3e88d' }}>&quot;Data Analytics&quot;</span>,
-                                    <span style={{ color: '#c3e88d' }}>&quot;Machine Learning&quot;</span>,
-                                    ],
+                                    <span style={{ color: '#7cb8ff' }}>passion</span>: [<span style={{ color: '#c3e88d' }}>&quot;Web&quot;</span>, <span style={{ color: '#c3e88d' }}>&quot;Data&quot;</span>, <span style={{ color: '#c3e88d' }}>&quot;AI&quot;</span>],
                                     <span style={{ color: '#7cb8ff' }}>openToWork</span>: <span style={{ color: '#ff9cac' }}>true</span>,
                                     {`};`}</code>
                             </pre>

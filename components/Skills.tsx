@@ -2,11 +2,31 @@
 import { useEffect, useRef, useState } from 'react';
 import { skills } from '@/lib/data';
 import { Code2, Globe, BarChart2 } from 'lucide-react';
+import { SiPython, SiJavascript, SiC, SiHtml5, SiReact, SiNodedotjs, SiExpress, SiMysql, SiPandas, SiOpenai } from 'react-icons/si';
+import { FaJava, FaChartBar } from 'react-icons/fa';
 
 const iconMap: Record<string, React.ReactNode> = {
     code: <Code2 size={22} />,
     globe: <Globe size={22} />,
     'bar-chart': <BarChart2 size={22} />,
+};
+
+const SkillLogo = ({ name }: { name: string }) => {
+    switch (name.toLowerCase()) {
+        case 'python': return <SiPython className="mr-2 opacity-80" />;
+        case 'java': return <FaJava className="mr-2 opacity-80" />;
+        case 'javascript': return <SiJavascript className="mr-2 opacity-80" />;
+        case 'c': return <SiC className="mr-2 opacity-80" />;
+        case 'html & css': return <SiHtml5 className="mr-2 opacity-80" />;
+        case 'react.js': return <SiReact className="mr-2 opacity-80" />;
+        case 'node.js / express': return <SiNodedotjs className="mr-2 opacity-80" />;
+        case 'restful apis': return <SiExpress className="mr-2 opacity-80" />;
+        case 'sql / mysql': return <SiMysql className="mr-2 opacity-80" />;
+        case 'power bi': return <FaChartBar className="mr-2 opacity-80" />;
+        case 'pandas / numpy': return <SiPandas className="mr-2 opacity-80" />;
+        case 'genai & llms': return <SiOpenai className="mr-2 opacity-80" />;
+        default: return null;
+    }
 };
 
 const colorMap: Record<string, { bg: string; text: string; barFrom: string; barTo: string }> = {
@@ -60,8 +80,11 @@ export default function Skills() {
                                 <div className="flex flex-col gap-4 mb-6">
                                     {cat.items.map(item => (
                                         <div key={item.name}>
-                                            <div className="flex justify-between text-sm mb-1.5">
-                                                <span style={{ color: 'var(--text-muted)' }}>{item.name}</span>
+                                            <div className="flex justify-between items-center text-sm mb-1.5">
+                                                <span style={{ color: 'var(--text-muted)' }} className="flex items-center">
+                                                    <SkillLogo name={item.name} />
+                                                    {item.name}
+                                                </span>
                                                 <span className="font-mono text-xs font-semibold" style={{ color: colors.text }}>{item.pct}%</span>
                                             </div>
                                             <div className="h-1.5 rounded-full" style={{ background: 'rgba(255,255,255,0.07)' }}>

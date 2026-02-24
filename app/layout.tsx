@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kumaran K | Software Developer",
     description:
-      "Final-year CSE student passionate about web dev, data analytics & ML. Open to opportunities.",
+      "Pre-Final-year CSE student passionate about web dev, data analytics & ML. Open to opportunities.",
     url: "https://kumaran-portfolio.vercel.app",
     siteName: "Kumaran K Portfolio",
     type: "website",
