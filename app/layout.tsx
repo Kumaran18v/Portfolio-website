@@ -41,15 +41,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Galaxy Background - Fixed full screen behind everything */}
         <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1 }}>
           <Galaxy
-            starSpeed={0.5}
-            density={1}
-            hueShift={140}
+            starSpeed={0.2}
+            density={1.5}
+            hueShift={180}
             speed={1}
-            glowIntensity={0.3}
-            saturation={1}
+            glowIntensity={0.7}
+            saturation={3.0}
             mouseRepulsion={true}
-            repulsionStrength={1}
-            twinkleIntensity={0.35}
+            repulsionStrength={1.5}
+            twinkleIntensity={0.5}
             rotationSpeed={0.15}
             transparent={true}
           />
