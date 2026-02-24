@@ -18,7 +18,7 @@ export default function Footer() {
                         </p>
                     </div>
                     <nav className="flex flex-wrap gap-2 justify-center">
-                        {['About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'].map(item => (
+                        {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map(item => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}

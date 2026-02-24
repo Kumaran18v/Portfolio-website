@@ -6,10 +6,8 @@ import Projects from "@/components/Projects";
 import GitHubGraph from "@/components/GitHubGraph";
 import LeetCodeStats from "@/components/LeetCodeStats";
 import Experience from "@/components/Experience";
-import Education from "@/components/Education";
 import CurrentlyLearning from "@/components/CurrentlyLearning";
 import Testimonials from "@/components/Testimonials";
-import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -25,10 +23,8 @@ export default function Home() {
         <GitHubGraph />
         <LeetCodeStats />
         <Experience />
-        <Education />
         <CurrentlyLearning />
         <Testimonials />
-        <Blog />
         <Contact />
       </main>
       <Footer />

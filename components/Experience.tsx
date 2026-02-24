@@ -75,6 +75,17 @@ export default function Experience() {
                         ))}
                     </div>
                 </div>
+
+                <div className="flex justify-center mt-12">
+                    <a
+                        href="https://drive.google.com/drive/folders/1W78XPXpDpkG8ky_6RkRK6CB6c4MRso5r?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-outline text-sm flex items-center gap-2"
+                    >
+                        View Internship Certificates ↗
+                    </a>
+                </div>
             </div>
         </section>
     );

@@ -6,6 +6,7 @@ import CursorGlow from "@/components/CursorGlow";
 import BackToTop from "@/components/BackToTop";
 import StatusBar from "@/components/StatusBar";
 import TerminalEgg from "@/components/TerminalEgg";
+import Galaxy from "@/components/Galaxy";
 
 export const metadata: Metadata = {
   title: "Kumaran K | Software Developer & Data Analyst",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Kumaran K | Software Developer",
-    description: "Final-year CSE student passionate about web dev & ML. Open to opportunities.",
+    description: "Pre-Final-year CSE student passionate about web dev & ML. Open to opportunities.",
     images: ["/kumaran-profile.jpg"],
   },
   robots: { index: true, follow: true },
@@ -37,13 +38,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
       </head>
       <body className="antialiased" style={{ fontFamily: 'var(--font-inter)' }}>
+        {/* Galaxy Background - Fixed full screen behind everything */}
+        <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1 }}>
+          <Galaxy
+            starSpeed={0.5}
+            density={1}
+            hueShift={140}
+            speed={1}
+            glowIntensity={0.3}
+            saturation={1}
+            mouseRepulsion={true}
+            repulsionStrength={1}
+            twinkleIntensity={0.35}
+            rotationSpeed={0.15}
+            transparent={true}
+          />
+        </div>
+
         <ThemeProvider>
           <ModeProvider>
-            <StatusBar />
-            <CursorGlow />
-            {children}
-            <BackToTop />
-            <TerminalEgg />
+            <div className="relative z-10">
+              <StatusBar />
+              <CursorGlow />
+              {children}
+              <BackToTop />
+              <TerminalEgg />
+            </div>
           </ModeProvider>
         </ThemeProvider>
       </body>

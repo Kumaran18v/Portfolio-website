@@ -240,14 +240,7 @@ export const projects = [
 export const certifications = [
     { name: "Participated in Adobe Hackathon", issuer: "Adobe", year: "2024" },
     { name: "Participated in Dreamflow Hackathon", issuer: "Dreamflow", year: "2024" },
-    { name: "C Programming", issuer: "Infosys Springboard", year: "2024" },
-    { name: "Database Management System", issuer: "Infosys Springboard", year: "2025" },
-    { name: "Cybersecurity Analysis & Design", issuer: "NASSCOM", year: "2024" },
     { name: "Introduction to Machine Learning", issuer: "NPTEL", year: "2025" },
-    { name: "Power BI Masterclass", issuer: "NoviTech R&D", year: "2025" },
-    { name: "HTML, CSS, Java & JS: Full Stack", issuer: "Udemy", year: "2025" },
-    { name: "OOP using Python", issuer: "Infosys Springboard", year: "2025" },
-    { name: "ChatGPT & AI Tools Workshop", issuer: "be10x", year: "2024" },
     { name: "Oracle Cloud Infrastructure Gen AI", issuer: "Oracle", year: "2024" },
 ];
 

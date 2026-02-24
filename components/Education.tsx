@@ -108,6 +108,19 @@ export default function Education() {
                         </div>
                     )}
                 </div>
+
+                {tab === 'cert' && (
+                    <div className="flex justify-center mt-12">
+                        <a
+                            href="https://drive.google.com/drive/folders/1pYRBkxgxcrJMHOWeH7YxcmCcYhwwtbiZ?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-outline text-sm flex items-center gap-2"
+                        >
+                            View All Certificates ↗
+                        </a>
+                    </div>
+                )}
             </div>
         </section>
     );
