@@ -210,7 +210,7 @@ export default function Galaxy({
       gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
       gl.clearColor(0, 0, 0, 0);
     } else {
-      gl.clearColor(0, 0, 0, 1);
+      gl.clearColor(0.015, 0.015, 0.02, 1);
     }
 
     let program;

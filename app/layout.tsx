@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             repulsionStrength={1.5}
             twinkleIntensity={0.5}
             rotationSpeed={0.15}
-            transparent={true}
+            transparent={false}
           />
         </div>
 
